@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+    <div class="hero is-black is-medium">
+    <link rel="stylesheet" href="bulma-0.9.0/css/bulma.min.css" />
+    <link rel="submit" href="file:///Users/sid/Desktop/WEB/login4.html"/>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .turrnet {
+        font-family: "Turret road";
+      }
+    </style> 
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>location selection</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solidrgb(7, 0, 0);}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color:gray;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  
+
+
+
+
+<h2>Login Form</h2>
+
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <div id='map' style='width: 1400px; height: 600px;'></div>
+    
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2lkZGUiLCJhIjoiY2trOTlyNG5yMDE3cTMybnhxa2k5azVzdSJ9.xpXdrMthk40OjqFiY4GO4w';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/sidde/ckk99w7r724nt17o1s0v304hf'
+});
+</script>
+  </div>
+
+  <div class="container">
+   
+    <label for="uname"><b>Enter location</b></label>
+    
+    
+    <input type="text" placeholder="" name="uname" required>
+
+    <label for="psw"><b></b></label>
+ 
+   
+<a href="finalLogin.html" target="button is-large is-light is-dark is-outlined">Search Destination</a>
+
+    <nav> 
+      <ul>
+       
+      </ul>
+    </nav>
+    
+    <section>
+        <nav>
+          <ul>
+           
+          </ul>
+        </nav>
+        
+    <label>
+      
+
+  <div class="container" style="background-color:#000000">
+    <button type="button" class="cancelbtn">Cancel</button>
+    
+    <span class="psw"> <a href="#"></a></span>
+  </div><div class="footer has-background-black has-text-light">
+    <p class="has-text-centered">Created by Siddhartha</p>
+</div>
+</form>
+
+</body>
+</html>
